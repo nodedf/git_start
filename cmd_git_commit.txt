@@ -1,0 +1,137 @@
+Microsoft Windows [Version 10.0.18363.720]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2019. Все права защищены.
+
+C:\Users\st>d:
+
+D:\>cd d:\Python310\Scripts\repo\git_intro
+
+d:\Python310\Scripts\repo\git_intro>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .ipynb_checkpoints/
+        Plotly intro.ipynb
+        cmd_git_init.txt
+        housing.csv
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+d:\Python310\Scripts\repo\git_intro>git add "Plotly intro.ipynb"
+warning: LF will be replaced by CRLF in Plotly intro.ipynb.
+The file will have its original line endings in your working directory
+
+d:\Python310\Scripts\repo\git_intro>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plotly intro.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .ipynb_checkpoints/
+        cmd_git_init.txt
+        housing.csv
+
+
+d:\Python310\Scripts\repo\git_intro>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plotly intro.ipynb
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Plotly intro.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .ipynb_checkpoints/
+        Plotly_intro.ipynb
+        cmd_git_init.txt
+        housing.csv
+
+
+d:\Python310\Scripts\repo\git_intro>git add Plotly_intro.ipynb
+warning: LF will be replaced by CRLF in Plotly_intro.ipynb.
+The file will have its original line endings in your working directory
+
+d:\Python310\Scripts\repo\git_intro>git add cmd_git_init.txt
+
+d:\Python310\Scripts\repo\git_intro>git add housing.csv
+warning: LF will be replaced by CRLF in housing.csv.
+The file will have its original line endings in your working directory
+
+d:\Python310\Scripts\repo\git_intro>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plotly intro.ipynb
+        new file:   Plotly_intro.ipynb
+        new file:   cmd_git_init.txt
+        new file:   housing.csv
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Plotly intro.ipynb
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .ipynb_checkpoints/
+
+
+d:\Python310\Scripts\repo\git_intro>git rm "Plotly intro.ipynb"
+rm 'Plotly intro.ipynb'
+
+d:\Python310\Scripts\repo\git_intro>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plotly_intro.ipynb
+        new file:   cmd_git_init.txt
+        new file:   housing.csv
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .ipynb_checkpoints/
+
+
+d:\Python310\Scripts\repo\git_intro>git commit -m "start_0.1.0"
+[master (root-commit) aebb755] start_0.1.0
+ 3 files changed, 21167 insertions(+)
+ create mode 100644 Plotly_intro.ipynb
+ create mode 100644 cmd_git_init.txt
+ create mode 100644 housing.csv
+
+d:\Python310\Scripts\repo\git_intro>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .ipynb_checkpoints/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+d:\Python310\Scripts\repo\git_intro>git log
+commit aebb755d58f5b200f205b81f744d1c1afa3aa609 (HEAD -> master)
+Author: ivanvikvik <ivanvikvik@gmail.com>
+Date:   Wed Jul 20 20:15:01 2022 +0300
+
+    start_0.1.0
+
+d:\Python310\Scripts\repo\git_intro>git commit -m "start_0.1.0"
